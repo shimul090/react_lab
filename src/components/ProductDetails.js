@@ -1,4 +1,5 @@
 import React from 'react'
+{/*TO show the details*/}
 
 function ProductDetails({product}) {
 	return (
