@@ -3,7 +3,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react'
 import Greet from './components/Greet';
 import Counter from './components/Counter';
-import Welcome from './components/Welcome';
+import Message from './components/Message';
 import Functionclick from './components/Functionclick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
