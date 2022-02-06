@@ -35,14 +35,17 @@ function Product() {
 	const[showDetails, setShowDetails] = useState(false)
 	
 	return (
-		<ul>{product.map(item => (
+		<div>
+			<h2 style={{ color: 'red'}}>List of Products</h2>
+			<ol>{product.map(item => (
 				<li key={item.id}>
 					<h5>Product: {item.name}, Price: {item.price}</h5>
 					<button onClick={() => setShowDetails(!showDetails)}>Details</button>
 					{showDetails && (<ProductDetails product={item} />)}
 				</li>
-			))}
-		</ul>
+				))}
+			</ol>
+		</div>
 	)
 }
 
